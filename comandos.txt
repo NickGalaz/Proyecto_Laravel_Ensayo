@@ -1,0 +1,12 @@
+composer create-project laravel/laravel "nombre carpeta"
+php artisan serve
+// usar tecla control y luego clickear ruta ip de la terminal 
+// ingresar con user faker569@hotmail.com, password: Nick1212
+
+npm run dev
+
+
+composer require laravel/jetstream
+php artisan jetstream:install liveware
+npm i 
+php artisan migrate
