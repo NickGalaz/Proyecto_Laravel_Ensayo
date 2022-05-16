@@ -26,6 +26,7 @@ php artisan make:migration create_users_table
 // Crear seeder con datos para migración
 php artisan make:seeder UserSeeder
 
+// git commit --amend -m "Para modificar mensajes commits"
 
 // PASOS DE PRUEBA EJERCICIO CON LIVEWIRE
 *Paso 1 crear modelo
