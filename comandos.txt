@@ -9,4 +9,30 @@ npm run dev
 composer require laravel/jetstream
 php artisan jetstream:install liveware
 npm i 
+
+// Comando para migrar base de datos de carpeta de database
 php artisan migrate
+
+// Comandos para crear modelos, controladores, migraciones, form request y resource.
+php artisan make:model Model -a
+
+php artisan make:model Nombremodelo
+php artisan make:request NombreFormRequest
+php artisan make:control NombreController
+
+// Crear tablas de migraciones
+php artisan make:migration create_users_table
+
+// Crear seeder con datos para migración
+php artisan make:seeder UserSeeder
+
+
+// PASOS DE PRUEBA EJERCICIO CON LIVEWIRE
+*Paso 1 crear modelo
+php artisan make:model Airplane -m
+
+*Paso 2 migración, crea tabla en la base de datos
+php artisan migrate
+
+*Paso 3 creación del componente airplane en livewire (se crea el controlador y la vista)
+php artisan make:livewire AirplaneComponent
