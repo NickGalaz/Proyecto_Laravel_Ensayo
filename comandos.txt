@@ -37,3 +37,10 @@ php artisan migrate
 
 *Paso 3 creación del componente airplane en livewire (se crea el controlador y la vista)
 php artisan make:livewire AirplaneComponent
+
+*Paso 4 nombrar ruta
+en web.php se le asignó un nombre a la ruta airplane "->name('airplane')" tras el randerizado.
+
+*Paso 5 airplane.blade 
+Se hizo la tabla llamando a los campos de la base de datos a través de un foreach.
+
