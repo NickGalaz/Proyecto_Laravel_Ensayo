@@ -24,4 +24,5 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'
         return view('dashboard');
     })->name('dashboard');
     Route::get('/airplane', [AirplaneComponent::class, 'render'])->name('airplane');
+    Route::delete('/airplane/{$id}', [AirplaneComponent::class, 'delete'])->name('delete');
 });
