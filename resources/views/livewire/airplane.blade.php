@@ -47,7 +47,7 @@
                                 <th scope="col" class="text-sm font-medium text-white px-6 py-4">Editar</th>
                                 <th scope="col" class="text-sm font-medium text-white px-6 py-4">Borrar</th>
                             </tr>
-                        </thead class="border-b">
+                        </thead>
                         <tbody>
                             @foreach ($dataAirplane as $aviones)
                             <tr class="bg-white border-b">
@@ -85,14 +85,12 @@
                                     {{$aviones->updated_at}}
                                 </td>
                                 <td>
-                                    <button class="text-sm text-gray-900 bg-green-600 font-bold px-6 py-4 whitespace-nowrap rounded-lg">EDITAR</button>
+                                    <button class="text-sm bg-green-600 hover:bg-green-700 text-white font-bold px-6 py-3 rounded-lg">EDITAR</button>
                                 </td>
                                 <td>
-                                    <!-- <button wire:click="confirm('delete', {{ $aviones->id }})" class="text-sm text-gray-900 font-bold bg-red-600 px-6 py-4 whitespace-nowrap rounded-lg">BORRAR</button> -->
-                                    <button wire:click="delete({{ $aviones->id }})" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Delete</button>
-                                    {{$aviones->id}}
+                                    <button wire:click="destroy({{$aviones->id}})" class="text-sm bg-red-600 px-5 hover:bg-red-700 text-white font-bold  py-3 rounded-lg">BORRAR</button>
                                 </td>
-                            </tr class=" bg-white border-b">
+                            </tr>
                             @endforeach
                         </tbody>
                     </table>

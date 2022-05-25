@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Livewire\AirplaneComponent;
+use App\Http\Livewire\Airplane;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +23,6 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
-    Route::get('/airplane', [AirplaneComponent::class, 'render'])->name('airplane');
-    Route::delete('/airplane/{$id}', [AirplaneComponent::class, 'delete'])->name('delete');
+    Route::get('/airplane', [Airplane::class, 'render'])->name('airplane');
+    Route::delete('/airplane/{$id}', [Airplane::class, 'delete'])->name('delete');
 });

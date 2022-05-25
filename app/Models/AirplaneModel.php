@@ -5,9 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Airplane extends Model
+class AirplaneModel extends Model
 {
     use HasFactory;
+    protected $table='airplanes';
+    protected $primaryKey='id';
 
     protected $fillable = [
         'name',
